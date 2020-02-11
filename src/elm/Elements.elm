@@ -8,7 +8,7 @@ module Elements exposing
 
 import FontAwesome as Icon
 import Html exposing (Html, button, div, h1, input, label, span, text)
-import Html.Attributes exposing (class, classList, type_)
+import Html.Attributes exposing (checked, class, classList, type_)
 import Html.Events exposing (onClick, onInput)
 
 
@@ -119,7 +119,7 @@ viewOption toggleOption ({ name, selected } as option) =
         [ label [ class "checkbox" ]
             [ input
                 [ type_ "checkbox"
-                , Html.Attributes.selected selected
+                , checked selected
                 , onInput <| \_ -> toggleOption option
                 , class "mr-2"
                 ]
