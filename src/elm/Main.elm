@@ -2,9 +2,8 @@ module Main exposing (..)
 
 import Browser
 import Elements
-import FontAwesome as Icon
-import Html exposing (Html, div, h1, img, text)
-import Html.Attributes exposing (class, src)
+import Html exposing (Html, div, h1, text)
+import Html.Attributes exposing (class)
 
 
 
